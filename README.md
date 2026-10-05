@@ -139,7 +139,10 @@ portfolio-market-risk/
 │   ├── historical_stress_test.py
 │   ├── hypothetical_stress_test.py
 │   └── create_plots.py
+├── tests/
+│   └── test_project.py
 ├── .gitignore
+├── pytest.ini
 ├── README.md
 └── requirements.txt
 ```
@@ -178,6 +181,21 @@ python src/create_plots.py
 ```
 
 The generated datasets are saved under `data/processed`, while the visualisations are saved under `plots`.
+
+## Automated Tests
+
+The project includes automated tests for:
+
+- Portfolio weights
+- Initial portfolio value
+- Drawdown calculation
+- Expected Shortfall and VaR consistency
+
+Run the tests with:
+
+```bash
+pytest -v
+```
 
 ## Methodology
 
